@@ -9,6 +9,16 @@
             {
                 "name" : "application",
                 "image" : "leolegends/microservices_php:stable",
+                "resources" : {
+                    "requests"  : {
+                        "cpu" : "100m",
+                        "memory" : "128M"
+                    },
+                    "limits" : {
+                        "cpu" : "250m",
+                        "memory" : "256M"
+                    }
+                },
                 "ports" : [{
                     "containerPort" : 80
                 }]
